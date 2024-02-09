@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <div class="main" id="main1">
+        <div class="sub">
+        <div class="sub1" onmouseover="show()" onmouseout="show11()" id="sub11"></div>
+        <div class="sub2" onmouseover="show1()" onmouseout="show12()" id="sub22"></div>
+        <!-- <div class="sub3" id="sub33"></div> -->
+    </div>
+    </div>
+</body>
+
+<script>
+function show(){
+    document.getElementById("sub11").style.transform="scale(0.8)"
+    document.getElementById("sub11").style.backgroundColor="orange"
+
+}
+
+function show1(){
+    document.getElementById("sub22").style.transform="scale(0.8)"
+}
+
+
+function show12(){
+    document.getElementById("sub11").style.transform="scale(1.2)"
+}
+
+function show11(){
+    document.getElementById("sub22").style.transform="scale(1.2)"
+}
+
+</script>
+</html>
